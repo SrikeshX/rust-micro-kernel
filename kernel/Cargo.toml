@@ -1,0 +1,12 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+bootloader_api = "0.11"
+font8x8 = { version = "0.3", default-features = false, features = ["unicode"] }
+pic8259 = "0.11"
+spin = "0.9"
+x86_64 = { version = "0.15", features = ["instructions"] }

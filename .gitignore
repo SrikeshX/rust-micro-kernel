@@ -1,0 +1,6 @@
+/target
+
+# Generated files
+**/__pycache__/
+*.pyc
+OVMF_VARS.fd
