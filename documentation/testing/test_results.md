@@ -22,9 +22,9 @@
 
 | Metric | BIOS | UEFI |
 |---|---:|---:|
-| Context switches | 84 | 84 |
-| Task 1 dispatches | 43 | 43 |
-| Task 2 dispatches | 42 | 42 |
+| Context switches | 84 | 46 |
+| Task 1 dispatches | 43 | 24 |
+| Task 2 dispatches | 42 | 23 |
 | Quantum | 5 ticks | 5 ticks |
 | PIT frequency | 100 Hz | 100 Hz |
 | Approximate time slice | 50 ms | 50 ms |

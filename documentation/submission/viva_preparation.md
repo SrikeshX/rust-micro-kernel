@@ -80,10 +80,9 @@ By building and running BIOS and UEFI configurations in an emulator and observin
 
 **Q18. What performance results were recorded?**
 
-Both observed runs recorded:
-- 84 context switches
-- 43 Task 1 dispatches
-- 42 Task 2 dispatches
+The recorded BIOS and UEFI snapshots were:
+- BIOS: 84 context switches, 43 Task 1 dispatches and 42 Task 2 dispatches.
+- UEFI: 46 context switches, 24 Task 1 dispatches and 23 Task 2 dispatches.
 - 5 timer ticks per quantum
 
 **Q19. What is the approximate time quantum in milliseconds?**
@@ -92,7 +91,7 @@ At approximately 100 PIT ticks per second, 5 ticks correspond to approximately 5
 
 **Q20. Were BIOS and UEFI results different?**
 
-The recorded scheduler counters were the same in the two observed runs. This does not prove identical performance under all workloads.
+The recorded scheduler counters differed between the two observed runs. These snapshots do not establish that one boot mode performs better.
 
 **Q21. Why use Python graphs?**
 
@@ -119,12 +118,15 @@ Practical Rust systems programming, kernel structure, scheduling, memory managem
 | Scheduler quantum | 5 timer ticks |
 | Approximate PIT frequency | 100 Hz |
 | Approximate time slice | 50 ms |
-| Context switches | 84 |
-| Task 1 dispatches | 43 |
-| Task 2 dispatches | 42 |
+| BIOS context switches | 84 |
+| BIOS Task 1 dispatches | 43 |
+| BIOS Task 2 dispatches | 42 |
 | Scheduler tests | 8 |
 | Allocator tests | 5 |
 | Protected synchronization updates | 1000 |
+| UEFI context switches | 46 |
+| UEFI Task 1 dispatches | 24 |
+| UEFI Task 2 dispatches | 23 |
 | Boot modes tested | BIOS and UEFI |
 
 ## 8. Viva Advice

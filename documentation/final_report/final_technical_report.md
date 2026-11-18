@@ -147,14 +147,14 @@ Runtime counters were used to record scheduler activity.
 
 | Metric | BIOS | UEFI |
 |---|---:|---:|
-| Context switches | 84 | 84 |
-| Task 1 dispatches | 43 | 43 |
-| Task 2 dispatches | 42 | 42 |
+| Context switches | 84 | 46 |
+| Task 1 dispatches | 43 | 24 |
+| Task 2 dispatches | 42 | 23 |
 | Scheduler quantum | 5 ticks | 5 ticks |
 | PIT frequency | 100 Hz | 100 Hz |
 | Approximate time slice | 50 ms | 50 ms |
 
-The recorded results show matching scheduler activity in the tested BIOS and UEFI runs.
+The observed runtime snapshots differ between BIOS and UEFI. BIOS recorded 84 context switches, while the UEFI session recorded 46. These are individual runtime observations, not controlled comparative benchmarks.
 
 These values are runtime snapshots triggered by Task 1 reaching a progress threshold. They are not fixed-duration benchmark measurements.
 

@@ -26,7 +26,7 @@ in both BIOS and UEFI runtime tests.
 ## 7. Performance Instrumentation
 Runtime counters recorded 84 context switches,
 43 Task 1 dispatches and 42 Task 2 dispatches
-in both tested boot modes.
+in the BIOS and UEFI runtime observations.
 
 ## 8. QEMU Timeout
 The 15-second QEMU test was intentionally stopped using timeout.

@@ -110,7 +110,7 @@ A separate 15-second QEMU run confirmed that both tasks continued producing prog
 - Synchronization is demonstrated using a protected shared counter.
 - The scheduler currently demonstrates two statically allocated tasks.
 - Blocked and terminated states exist, but complete blocking, wake-up and termination mechanisms are not implemented.
-- BIOS runtime behavior has been tested in QEMU. UEFI runtime behavior requires separate verification.
+- BIOS and UEFI runtime behavior have been demonstrated in QEMU. UEFI evidence includes kernel initialization and timer-driven execution of both tasks.
 
 ## Future Improvements
 
@@ -119,7 +119,7 @@ A separate 15-second QEMU run confirmed that both tasks continued producing prog
 - Memory deallocation.
 - Global allocator integration.
 - Stronger synchronization tests.
-- UEFI runtime verification.
+- Broader UEFI testing across repeated runs and additional workloads.
 - Keyboard and additional device drivers.
 
 ## Project Goal
